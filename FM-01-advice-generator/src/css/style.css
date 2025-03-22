@@ -1,0 +1,77 @@
+.container,
+.container section,
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    justify-content: center;
+    min-width: 100%;
+    min-height: 100vh;
+    background-color: var(--container);
+}
+
+.container section {
+    position: relative;
+}
+
+.card {
+    background-color: var(--card);
+    width: 550px;
+    height: 350px;
+    padding: 25px;
+    border-radius: 20px;
+    font-family: "Manrope", sans-serif;
+}
+
+.card h1 {
+    font-size: 20px;
+    color: var(--color-button-text);
+}
+
+#advice {
+    font-weight: 800;
+    font-size: 30px;
+    color: var(--color-advice);
+}
+.card h1,
+.card hr,
+#advice {
+    text-align: center;
+    margin: 25px 0 0;
+}
+
+.card hr {
+    align-self: center;
+    content: url(../images/pattern-divider-desktop.svg);
+    border: none;
+}
+
+#button-gen {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    top: 312px;
+    background-color: var(--color-button-text);
+    transition: 0.1s;
+}
+
+#button-gen:active {
+    box-shadow: 0px 0px 40px var(--color-button-text);
+}
+
+@media (max-width: 600px) {
+    .card{
+        width: 350px;
+        padding: 25px;
+    }
+    .card hr {
+        content: url(../images/pattern-divider-mobile.svg);
+    }
+    #advice{
+        font-size: 25px;
+    }
+}

@@ -1,0 +1,72 @@
+body{
+    background-color: #674baf;
+}
+.container{
+    display: grid;
+    grid-template-rows: 1fr 4fr 100px;
+    background: url(../images/bg-mobile.svg);
+    background-size: cover;
+    background-repeat: contain;
+    min-height: 100vh;
+}
+.container .header-logo{
+    padding: 50px 30px;
+}
+.header-logo a img{
+    max-width: 50%;
+}
+.principal{
+    padding: 0 18px;
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+}
+.principal h1{
+    font-family: "Poppins", sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+}
+.principal p{
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    margin: 20px 0 50px;
+}
+.principal .btn-sign{
+    font-family: "Poppins", sans-serif;
+    color: #674baf;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 20px 80px;
+    transition: 0.3s;
+}
+.principal .btn-sign:hover{
+background-color: #e882e8;
+color: #fff;
+}
+.rodape{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rodape a i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+}
+
+.rodape a{
+    margin: 0 15px;
+    padding: 10px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 25px;
+    transition: 0.3s;
+}
+.rodape a:hover{
+color:#e882e8;
+border-color: #e882e8;
+}

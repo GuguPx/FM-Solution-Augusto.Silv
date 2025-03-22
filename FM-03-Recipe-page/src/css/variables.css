@@ -1,0 +1,13 @@
+:root{
+    --background-container:hsl(30, 54%, 90%);
+    --background-recipe:hsl(0, 0%, 100%);
+    --background-prep-time:hsl(330, 100%, 98%);
+    --color-title:hsl(24, 5%, 18%);
+    --color-parag-title:hsl(30, 10%, 34%);
+    --color-prep-time:hsl(332, 51%, 32%);
+    --color-subtitle:hsl(14, 45%, 36%);
+    --color-hr:hsl(30, 18%, 87%);
+    --font-size-title-parag: 16px;
+    --font-family-title:"Young Serif", serif;
+    --font-family-parag: "Outfit", sans-serif;
+}

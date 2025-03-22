@@ -1,0 +1,100 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--background-container);
+    
+}
+.recipe{
+    display: flex;
+    flex-direction: column;
+    width: 745px;
+    margin: 120px 0 100px;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: var(--background-recipe);
+    gap: 25px;
+}
+.recipe li::marker{
+    color: var(--color-subtitle);
+    font-weight: 600;
+}
+.recipe-presentation, .recipe-presentation img{
+    width: 100%;
+    border-radius: 15px;
+}
+.recipe-presentation h1{
+    font-family: var(--font-family-title);
+    color: var(--color-title);
+    font-weight: 400;
+    font-size: 40px;
+    margin: 30px 0px 20px;
+}
+.prep-time{
+    background-color: var(--background-prep-time);
+    border-radius: 5px;
+    padding: 20px 25px;
+}
+.prep-time h2{
+    color: var(--color-prep-time);
+    font-weight: 600;
+    font-size: 20px;
+}
+.prep-time li{
+    text-indent: 20px;
+    margin: 15px;   
+    font-size: 15px;
+}
+.recipe hr{
+    border: none;
+    height: 1px;
+    background-color: var(--color-hr);
+}
+.font{
+    font-weight: 700;
+}
+.ingredients li, .instructions li{
+    margin: 0px 20px 13px;
+    text-indent: 10px;
+}
+
+.ingredients h2, .instructions h2, .nutrition h2{
+font-family: var(--font-family-title);
+font-size: 25px;
+padding-bottom: 12px;
+color: var(--color-subtitle);
+}
+.table-nutition{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-spacing: 0 20px;
+}
+td{
+    color: var(--color-subtitle);
+    font-weight: 700;
+}
+th, td{
+    padding: 15px;
+}
+.table-nutition th{
+    text-align: start;
+}
+.table-nutition tr{
+    border-bottom: 1px solid var(--color-hr);
+}
+@media(max-width:375px){
+    .recipe{
+        margin: 0;
+        padding: 20px;
+        border-radius: 0;
+    }
+    .recipe-presentation h1{
+        font-size: 26px;
+    }
+    .ingredients li, .instructions li{
+        margin: 0px 10px 6px;
+        text-indent: 0;
+    }
+}

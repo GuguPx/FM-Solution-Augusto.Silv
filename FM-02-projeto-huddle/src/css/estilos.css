@@ -1,0 +1,35 @@
+@media (min-width: 768px){
+    .container{
+        background: url(../images/bg-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .header-logo a img{
+        max-width: 200px;
+    }
+    .principal{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+    .principal img{
+        max-width: 45%;
+    }
+    .principal .descricao{
+        text-align: left;
+    }
+    .principal .descricao h1{
+        font-size: 42px;
+        max-width: 500px;
+    }
+    .principal .descricao p{
+        font-size: 25px;
+        max-width: 700px;
+    }
+    .rodape{
+        justify-content: flex-end;
+        margin-right: 50px;
+    }
+}
