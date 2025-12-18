@@ -4,25 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="src/images/favicon-32x32.png" type="image/x-icon">
-    <link rel="stylesheet" href="./src/css/reset.css">
-    <link rel="stylesheet" href="./src/css/variables.css">
-    <link rel="stylesheet" href="./src/css/style.css">
-    <title>Advice generator app</title>
+    <meta name="description" content="Gerador de conselhos usando js e flexbox">
+    <title>Gerador de Conselhos | Frontend Mentor</title>
+
+    <link rel="stylesheet" href="Src/css/reset.css">
+    <link rel="stylesheet" href="Src/css/variables.css">
+    <link rel="stylesheet" href="Src/css/style.css">
+    <link rel="shortcut icon" href="Src/Image/favicon-32x32.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <main class="container">
-        <section>
-            <div class="card">
-                <h1>ADVICE <span id="counter">#117</span></h1>
-                <p id="advice">"It is easy to sit up and take notice, what's difficult is getting up and taking action"
-                </p>
-                <hr>
-            </div>
-            <button id="button-gen"><img src="./src/images/icon-dice.svg" alt="Dice"></button>
-        </section>
+        <div class="conselhos-card">
+            <h2 class="counter-advice">ADVICE&nbsp;<span class="number-counter" id="numberCounter">#117</span></h2>
+
+            <p class="advice" id="advice">"It is easy to sit up and take notice, what difficult is getting up and taking action."</p>
+
+            <div class="divider"></div>
+            
+            <button class="gerador" id="btnGerador"></button>
+        </div>
     </main>
+    <script src="index.js"></script>
 </body>
 
 </html>
