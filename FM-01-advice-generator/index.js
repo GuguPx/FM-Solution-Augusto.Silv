@@ -1,5 +1,5 @@
-import { getAdviceData } from './Src/script/services/advice.js';
-import { screen } from './Src/script/objects/screen.js';
+import { getAdviceData } from './src/script/services/advice.js';
+import { screen } from './src/script/objects/screen.js';
 
 const btnAdvice = document.getElementById('btnAdvice');
 let loading = false;
