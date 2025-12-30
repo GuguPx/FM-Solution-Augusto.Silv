@@ -1,67 +1,70 @@
+html{
+    font-size: 62.5%;
+}
 body {
     font-family: 'Manrope', sans-serif;
     background-color: var(--background-color);
 }
-.container {
+.main-container, .container-advice{
     display: flex;
-    justify-content: center;
     align-items: center;
+}
+.main-container {
+    justify-content: center;
     height: 100vh;
 }
-.conselhos-card {
+.container-advice {
     background-color: var(--advice-card-color);
-    display: flex;
     position: relative;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
-    max-width: 540px;
-    max-height: 340px;
+    max-width: 54rem;
+    max-height: 34rem;
     width: 100%;
     height: 100%;
-    border-radius: 15px;
+    border-radius: 1.5rem;
 }
-.conselhos-card .counter-advice{
-    font-size: 13px;
-    letter-spacing: 4px;
+.container-advice .title-advice{
+    font-size: 1.3rem;
+    letter-spacing: 0.4rem;
     color: var(--advice-dice-color);
 }
-.conselhos-card .advice{
+.container-advice .text-advice{
     color: var(--text-color);
-    font-size: 27px;
+    font-size: 2.7rem;
     text-align: center;
-    max-width: 440px;
+    max-width: 44rem;
 }
-.conselhos-card .divider{
-    padding-bottom: 40px;
+.container-advice .divider{
+    padding-bottom: 4rem;
 }
-.conselhos-card .divider::after{
+.container-advice .divider::after{
     content: url(../Image/pattern-divider-desktop.svg);
 }
-.conselhos-card .gerador{
-    width: 70px;
-    height: 70px;
+.container-advice .btn-advice{
+    width: 7rem;
+    height: 7rem;
     background-color: var(--advice-dice-color);
     border-radius: 50%;
     position: absolute;
-    top: 305px;
+    top: 30.5rem;
 }
-.conselhos-card .gerador::after{
+.container-advice .btn-advice::after{
     content: url(../Image/icon-dice.svg);
 }
-.conselhos-card .gerador:active{
-    box-shadow: 0 0 45px var(--advice-dice-color);
+.container-advice .btn-advice:active{
+    box-shadow: 0 0 4.5rem var(--advice-dice-color);
 }
 
-@media (max-width: 768px) {  
-    .conselhos-card{
-        margin: 20px;
+@media (max-width: 76.8rem) {  
+    .container-advice{
+        margin: 2rem;
     }
-    .conselhos-card .divider::after{
+    .container-advice .divider::after{
         content: url(../Image/pattern-divider-mobile.svg);
     }
-    .conselhos-card .advice{
-        font-size: 20px;
-        margin: 0 20px;
+    .container-advice .advice{
+        font-size: 2rem;
+        margin: 0 2rem;
     }
 }

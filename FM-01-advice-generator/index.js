@@ -1,30 +1,24 @@
-const botao = document.getElementById('btnGerador') 
-let carregando = false;
+import { getAdviceData } from './Src/script/services/advice.js';
+import { screen } from './Src/script/objects/screen.js';
 
-botao.addEventListener('click', novoConselho);
+const btnAdvice = document.getElementById('btnAdvice');
+let loading = false;
+btnAdvice.addEventListener('click', genAdvice);
 
-async function buscarConselho() {
-    const url = "https://api.adviceslip.com/advice";
-    const resposta = await fetch(url);
-    return await resposta.json();
-}
+alert('We are having a problem with our server, so the request is a bit slow. Thanks for your understanding.')
+async function genAdvice() {
+    if(loading) return;
 
-async function novoConselho() {
-    if (carregando) return;
-
-    carregando = true;
+    loading = true;
     try{
-        const dados = await buscarConselho();
-        document.getElementById("advice").innerHTML = dados.slip.advice;
-        document.getElementById("numberCounter").innerHTML = dados.slip.id;
-        console.log(`Gerado novo conselho!${dados.slip.id}`)
-    }catch(err){
-        console.error(erro);
+    const conselho = await getAdviceData();
+    console.log(conselho);
+    screen.renderAdvice(conselho);
+    }catch(erro){
+        console.error(erro)
     }finally{
-        carregando = false;
+        loading = false;
     }
 }
 
-
-
-
+genAdvice()

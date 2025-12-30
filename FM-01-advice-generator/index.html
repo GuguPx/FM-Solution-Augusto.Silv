@@ -1,34 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Gerador de conselhos usando js e flexbox">
-    <title>Gerador de Conselhos | Frontend Mentor</title>
-
-    <link rel="stylesheet" href="Src/css/reset.css">
-    <link rel="stylesheet" href="Src/css/variables.css">
-    <link rel="stylesheet" href="Src/css/style.css">
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/variables.css">
+    <link rel="stylesheet" href="src/css/style.css">
     <link rel="shortcut icon" href="Src/Image/favicon-32x32.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
+    <title>Advice</title>
 </head>
-
 <body>
-    <main class="container">
-        <div class="conselhos-card">
-            <h2 class="counter-advice">ADVICE&nbsp;<span class="number-counter" id="numberCounter">#117</span></h2>
-
-            <p class="advice" id="advice">"It is easy to sit up and take notice, what difficult is getting up and taking action."</p>
-
+    <main class="main-container">
+        <div class="container-advice">
+            <h1 class="title-advice"></h1>
+            <p class="text-advice"></p>
             <div class="divider"></div>
-            
-            <button class="gerador" id="btnGerador"></button>
+            <button class="btn-advice" id="btnAdvice"></button>
         </div>
     </main>
-    <script src="index.js"></script>
+    <script type="module" src="index.js"></script>
 </body>
-
 </html>

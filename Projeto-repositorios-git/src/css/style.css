@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+html {
+  font-size: 62.5%;
+}
+main {
+  background-color: rgb(36, 40, 46);
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  padding: 2vw;
+}
+.main-container .devicon-github-original {
+  font-size: 8rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+.container {
+  background-color: rgb(255, 255, 255);
+  padding: 4vw 1rem;
+  width: min(80rem, 90%);
+  border-radius: 3rem;
+}
+.container, .search-user{
+  gap: 2rem;
+}
+.search-user, .result, .user-data-result, .num-follow, .result-repos-list{
+  width: 100%;
+}
+.title-search {
+  font-size: clamp(1.5rem, 6vw + 1rem, 3rem);
+}
+.text-input {
+  padding: 1rem;
+  width: clamp(25rem, 20vw, 50rem);
+}
+.btn-search {
+  padding: 1rem 3rem;
+}
+.result .user-avatar {
+  width: clamp(18rem, 50vw, 30rem);
+  height: auto; 
+  border: 5px solid black;
+  border-radius: 50%;
+}
+.user-info {
+  text-align: center;
+}
+.user-info .user-name {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+}
+.user-info .user-bio {
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+}
+.user-info .num-follow{
+  font-size: clamp(1.2rem, 2vw, 1.4rem);
+  font-weight: 400;
+}
+.result-repos {
+  width: 90%;
+  gap: 1rem;
+}
+.result-repos-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+  gap: 1rem;
+}
+.repos {
+  display: flex;
+  min-width: 0;
+}
+.repos .repos-link {
+  flex: 1;
+  gap: 1rem;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  padding: 1.2rem 1.6rem;
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  background-color: rgb(36, 40, 46);
+  color: #fff;
+  border-radius: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+.repos .repos-link:hover {
+  background-color: #6a6974;
+}
+.repos .repos-link:active {
+  transform: scale(0.96);
+}
+.repos .repos-link:focus-visible {
+  outline: 5px solid #fff;
+  outline-offset: 4px;
+}
+.repo-info span{
+  background-color:#6756cc;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 650px) {
+  .container {
+    min-height: 40rem;
+  }
+  .search-user {
+    gap: 3rem;
+  }
+  .btn-search, .text-input, .user-info{
+    width: 90%;
+  }
+  .user-data-result {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem 0;
+  }
+}
