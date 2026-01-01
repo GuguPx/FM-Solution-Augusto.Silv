@@ -1,17 +1,15 @@
 html{
     font-size: 62.5%;
 }
-body {
+.main-container {
     font-family: 'Manrope', sans-serif;
     background-color: var(--background-color);
+    justify-content: center;
+    height: 100vh;
 }
 .main-container, .container-advice{
     display: flex;
     align-items: center;
-}
-.main-container {
-    justify-content: center;
-    height: 100vh;
 }
 .container-advice {
     background-color: var(--advice-card-color);
@@ -48,9 +46,13 @@ body {
     border-radius: 50%;
     position: absolute;
     top: 30.5rem;
+    cursor: pointer;
 }
 .container-advice .btn-advice::after{
     content: url(../Image/icon-dice.svg);
+}
+.container-advice .loading::after{
+    content: url(../Image/tube-spinner.svg);
 }
 .container-advice .btn-advice:active{
     box-shadow: 0 0 4.5rem var(--advice-dice-color);

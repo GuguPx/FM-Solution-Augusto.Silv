@@ -1,24 +1,34 @@
-import { getAdviceData } from './src/script/services/advice.js';
-import { screen } from './src/script/objects/screen.js';
-
 const btnAdvice = document.getElementById('btnAdvice');
+const url = "https://api.adviceslip.com/advice";
 let loading = false;
+
 btnAdvice.addEventListener('click', genAdvice);
 
-alert('We are having a problem with our server, so the request is a bit slow. Thanks for your understanding.')
+async function getAdviceData() {
+    const response = await fetch(url);
+    const { slip } = await response.json();
+    return slip;
+}
+const screen = {
+    id: document.querySelector('#numId'),
+    text: document.querySelector('.text-advice'),
+    renderAdvice(conselho){
+        this.id.innerHTML = conselho.id;
+        this.text.innerHTML = conselho.advice;
+    }
+}
+
 async function genAdvice() {
     if(loading) return;
-
+    btnAdvice.classList.add('loading');
     loading = true;
     try{
     const conselho = await getAdviceData();
-    console.log(conselho);
     screen.renderAdvice(conselho);
     }catch(erro){
         console.error(erro)
     }finally{
+        btnAdvice.classList.remove('loading');
         loading = false;
     }
 }
-
-genAdvice()
