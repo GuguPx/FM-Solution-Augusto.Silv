@@ -1,0 +1,6 @@
+:root {
+    --containerQr: hsl(0, 0%, 100%);
+    --backgroundColor: hsl(212, 45%, 89%);
+    --paragColor: hsl(216, 15%, 48%);
+    --titleColor: hsl(218, 44%, 22%);
+}
