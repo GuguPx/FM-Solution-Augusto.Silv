@@ -1,0 +1,51 @@
+html{ font-size: 62.5%; }
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--color-grey9);
+    color: var(--color-white);
+    font-family: var(--font-primary);
+}
+.profile{
+    width: 37.5rem;
+    height: auto;
+    background-color: var(--color-grey8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+    gap: 2rem;
+    border-radius: 1.5rem;
+}
+.profile .profile-img{
+    max-width: 12rem;
+    border-radius: 50%;
+}
+.profile .info{
+    width: 70%;
+    display: grid;
+    gap: 1rem;
+}
+.info .info-title{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.info .info-local{
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--color-green);
+}
+.info .info-bio{
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 1rem;
+}
+.network-links{
+
+} 
